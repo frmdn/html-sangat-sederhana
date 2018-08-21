@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sensor Manusia Ajaib</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<h1>ARKANA D'VISI MODULE</h1>
+			</div>
+			<div class="col-md-4">
+				<div class="lampu"></div>
+			</div>
+		</div>
+
+		
+		<button class="btn btn-primary" id="cetekan" onclick="lampu()">Merah</button>
+		
+
+	</div>
+
+	<script type="text/javascript">
+		function lampu() {
+			$('.lampu').toggleClass('nyala');
+			var teks = $('#cetekan').text();
+			if (teks == "Merah") {
+				$('#cetekan').html('Hijau');
+			} else {
+				$('#cetekan').html('Merah');
+			}
+		}
+	</script>
+</body>
+</html>
